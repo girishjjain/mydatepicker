@@ -7,7 +7,7 @@ export class LocaleService {
         "en": {
             dayLabels: {su: "Sun", mo: "Mon", tu: "Tue", we: "Wed", th: "Thu", fr: "Fri", sa: "Sat"},
             monthLabels: { 1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr", 5: "May", 6: "Jun", 7: "Jul", 8: "Aug", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec" },
-            dateFormat: "yyyy-mm-dd",
+            dateFormat: "mm/dd/yyyy",
             todayBtnTxt: "Today",
             firstDayOfWeek: "mo",
             sunHighlight: true,
@@ -38,7 +38,7 @@ export class LocaleService {
         "es": {
             dayLabels: {su: "Do", mo: "Lu", tu: "Ma", we: "Mi", th: "Ju", fr: "Vi", sa: "Sa"},
             monthLabels: {1: "Ene", 2: "Feb", 3: "Mar", 4: "Abr", 5: "May", 6: "Jun", 7: "Jul", 8: "Ago", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dic"},
-            dateFormat: "dd.mm.yyyy",
+            dateFormat: "dd/mm/yyyy",
             todayBtnTxt: "Hoy",
             firstDayOfWeek: "mo",
             sunHighlight: true,
