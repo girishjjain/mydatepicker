@@ -79,7 +79,7 @@ export class MyDatePicker implements OnChanges, ControlValueAccessor {
         disableWeekends: <boolean> false,
         height: <string> "34px",
         width: <string> "100%",
-        selectionTxtFontSize: <string> "18px",
+        selectionTxtFontSize: <string> "14px",
         inline: <boolean> false,
         showClearDateBtn: <boolean> true,
         alignSelectorRight: <boolean> false,

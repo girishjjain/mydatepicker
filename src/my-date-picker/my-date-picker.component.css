@@ -95,7 +95,7 @@
     display: table-cell;
     position: absolute;
     width: 100%;
-    font-weight: bold;
+    font-weight: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -189,7 +189,7 @@
 .mydp .weekdaytitle,
 .mydp .daycell {
     border-collapse: collapse;
-    color: #003366;
+    color: #000;
     line-height: 1.1;
 }
 
@@ -252,7 +252,7 @@
 
 .mydp .currmonth {
     background-color: #F6F6F6;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .mydp .currday {
@@ -260,7 +260,7 @@
 }
 
 .mydp .selectedday div {
-    border: 1px solid #004198;
+    border: 1px solid #000;
     background-color: #8EBFFF !important;
     border-radius: 2px;
 }
@@ -305,7 +305,7 @@
 .mydp .headeryeartxt,
 .mydp .headertodaybtn,
 .mydp .selection {
-    color: #000;
+    color: #797979;
 }
 
 .mydp .headertodaybtn {
@@ -353,15 +353,15 @@
     outline: 1px solid #CCC;
 }
 
-.mydp .icon-calendar,
-.mydp .icon-cross {
-    font-size: 16px;
+.mydp .mydatePickerimg-calendar,
+.mydp .mydatePickerimg-cross {
+    font-size: 15px;
 }
 
-.mydp .icon-left,
-.mydp .icon-right {
+.mydp .mydatePickerimg-left,
+.mydp .mydatePickerimg-right {
     color: #222;
-    font-size: 16px;
+    font-size: 15px;
     vertical-align: middle;
 }
 
@@ -416,7 +416,18 @@
     font-style: normal;
 }
 
-.mydp .icon {
+@font-face {
+font-family: 'icomoon';
+    src:url('node_modules/localedatepicker/dist/fonts/icomoon.eot');
+    src:url('node_modules/localedatepicker/dist/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('node_modules/localedatepicker/dist/fonts/icomoon.woff') format('woff'),
+        url('node_modules/localedatepicker/dist/fonts/icomoon.ttf') format('truetype'),
+        url('node_modules/localedatepicker/dist/fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mydp .mydatePickerimg {
     font-family: 'mydatepicker';
     font-style: normal;
     font-weight: normal;
@@ -427,18 +438,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mydp .icon-calendar:before {
-    content: url('node_modules/localedatepicker/dist/icons/calendar.png');
+.mydp .mydatePickerimg-calendar:before {
+    content: "\e600";
 }
 
-.mydp .icon-cross:before {
-    content: url('node_modules/localedatepicker/dist/icons/cross.png');
+.mydp .mydatePickerimg-cross:before {
+    content: "\e602";
 }
 
-.mydp .icon-left:before {
-    content: url('node_modules/localedatepicker/dist/icons/arrow-left.png');
+.mydp .mydatePickerimg-left:before {
+    content: "\e605";
 }
 
-.mydp .icon-right:before {
-    content: url('node_modules/localedatepicker/dist/icons/arrow-right.png');
+.mydp .mydatePickerimg-right:before {
+    content: "\e607";
 }
