@@ -428,17 +428,17 @@
 }
 
 .mydp .icon-calendar:before {
-    content: "\e600";
+    content: url('node_modules/localedatepicker/dist/icons/calendar.png');
 }
 
 .mydp .icon-cross:before {
-    content: "\e602";
+    content: url('node_modules/localedatepicker/dist/icons/cross.png');
 }
 
 .mydp .icon-left:before {
-    content: "\e605";
+    content: url('node_modules/localedatepicker/dist/icons/arrow-left.png');
 }
 
 .mydp .icon-right:before {
-    content: "\e607";
+    content: url('node_modules/localedatepicker/dist/icons/arrow-right.png');
 }
