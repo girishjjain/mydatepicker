@@ -5,10 +5,10 @@
                 (keyup)="userDateInput($event)" [value]="selectionDayTxt" (blur)="lostFocusInput($event)" [disabled]="opts.componentDisabled" [readonly]="!opts.editableDateField" [required]="opts.inputValueRequired" (click)="handleInputClick($event)">
         <span class="selbtngroup" [style.height]="opts.height">
             <button type="button" aria-label="Clear Date" class="btnclear" *ngIf="selectionDayTxt.length>0&&opts.showClearDateBtn" (click)="removeBtnClicked()" [ngClass]="{'btnclearenabled': !opts.componentDisabled, 'btncleardisabled': opts.componentDisabled, 'btnleftborder': opts.showInputField}" [disabled]="opts.componentDisabled">
-                <span class="icon icon-cross" [ngStyle]="{'line-height': opts.height}"></span>
+                <span class="mydatePickerimg mydatePickerimg-cross" [ngStyle]="{'line-height': opts.height}"></span>
             </button>
             <button type="button" aria-label="Open Calendar" class="btnpicker" (click)="openBtnClicked()" [ngClass]="{'btnpickerenabled': !opts.componentDisabled, 'btnpickerdisabled': opts.componentDisabled, 'btnleftborder': opts.showInputField||selectionDayTxt.length>0&&opts.showClearDateBtn}" [disabled]="opts.componentDisabled">
-                <span class="icon icon-calendar" [ngStyle]="{'line-height': opts.height}"></span>
+                <span class="mydatePickerimg mydatePickerimg-calendar" [ngStyle]="{'line-height': opts.height}"></span>
             </button>
         </span>
     </div>
@@ -17,12 +17,12 @@
             <tr>
                 <td>
                     <div style="float:left">
-                        <div class="headerbtncell"><button type="button" aria-label="Previous Month" class="headerbtn icon icon-left" (click)="prevMonth()"></button></div>
+                        <div class="headerbtncell"><button type="button" aria-label="Previous Month" class="headerbtn mydatePickerimg mydatePickerimg-left" (click)="prevMonth()"></button></div>
                         <div class="headermonthtxt">
                             <input type="text" *ngIf="editMonth" class="monthinput" maxlength="10" inputFocus [value]="visibleMonth.monthTxt" (keyup)="userMonthInput($event)" (click)="$event.stopPropagation()" [ngClass]="{'invalidmonth': invalidMonth}">
                             <button class="headerlabelbtn" type="button" [ngClass]="{'monthlabel': opts.editableMonthAndYear}" *ngIf="!editMonth" (click)="opts.editableMonthAndYear&&editMonthClicked($event)" tabindex="{{opts.editableMonthAndYear?'0':'-1'}}">{{visibleMonth.monthTxt}}</button>
                         </div>
-                        <div class="headerbtncell"><button type="button" aria-label="Next Month" class="headerbtn icon icon-right" (click)="nextMonth()"></button></div>
+                        <div class="headerbtncell"><button type="button" aria-label="Next Month" class="headerbtn mydatePickerimg mydatePickerimg-right" (click)="nextMonth()"></button></div>
                     </div>
                 </td>
                 <td *ngIf="opts.showTodayBtn">
@@ -30,12 +30,12 @@
                 </td>
                 <td>
                     <div style="float:right">
-                        <div class="headerbtncell"><button type="button" aria-label="Previous Year" class="headerbtn icon icon-left" (click)="prevYear()"></button></div>
+                        <div class="headerbtncell"><button type="button" aria-label="Previous Year" class="headerbtn mydatePickerimg mydatePickerimg-left" (click)="prevYear()"></button></div>
                         <div class="headeryeartxt">
                             <input type="text" *ngIf="editYear" class="yearinput" maxlength="4" inputFocus [value]="visibleMonth.year" (keyup)="userYearInput($event)" (click)="$event.stopPropagation()" [ngClass]="{'invalidyear': invalidYear}">
                             <button class="headerlabelbtn" type="button" [ngClass]="{'yearlabel': opts.editableMonthAndYear}" *ngIf="!editYear" (click)="opts.editableMonthAndYear&&editYearClicked($event)" tabindex="{{opts.editableMonthAndYear?'0':'-1'}}">{{visibleMonth.year}}</button>
                         </div>
-                        <div class="headerbtncell"><button type="button" aria-label="Next Year" class="headerbtn icon icon-right" (click)="nextYear()"></button></div>
+                        <div class="headerbtncell"><button type="button" aria-label="Next Year" class="headerbtn mydatePickerimg mydatePickerimg-right" (click)="nextYear()"></button></div>
                     </div>
                 </td>
             </tr>
