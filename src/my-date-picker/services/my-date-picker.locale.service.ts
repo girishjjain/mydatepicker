@@ -15,7 +15,7 @@ export class LocaleService {
         "ja": {
             dayLabels: { su: "日", mo: "月", tu: "火", we: "水", th: "木", fr: "金", sa: "土" },
             monthLabels: { 1: "１月", 2: "２月", 3: "３月", 4: "４月", 5: "５月", 6: "６月", 7: "７月", 8: "８月", 9: "９月", 10: "１０月", 11: "１１月", 12: "１２月" },
-            dateFormat: "yyyy.mm.dd",
+            dateFormat: "yyyy/mm/dd",
             todayBtnTxt: "今日",
             firstDayOfWeek: "su",
             sunHighlight: false
@@ -183,7 +183,7 @@ export class LocaleService {
          "zh": {
             dayLabels: { su: "日", mo: "一", tu: "二", we: "三", th: "四", fr: "五", sa: "六" },
             monthLabels: { 1: "1月", 2: "2月", 3: "3月", 4: "4月", 5: "5月", 6: "6月", 7: "7月", 8: "8月", 9: "9月", 10: "10月", 11: "11月", 12: "12月" },
-            dateFormat: "yyyy-mm-dd",
+            dateFormat: "yyyy/mm/dd",
             todayBtnTxt: "今天",
             firstDayOfWeek: "su",
             sunHighlight: true,
